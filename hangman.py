@@ -1,5 +1,21 @@
 import random
-word_list=["Apple","Pen","Stomach","Arrow","Computer","Python","Cartoon"]
+word_list = [
+    "apple", "mango", "guitar", "planet", "shadow", "bridge", "castle",
+    "dragon", "forest", "jungle", "mirror", "needle", "orange", "parrot",
+    "quartz", "rabbit", "silver", "temple", "umbrella", "velvet", "wallet",
+    "xenon", "yellow", "zipper", "basket", "candle", "desert", "engine",
+    "feather", "garden", "hammer", "island", "jacket", "kitchen", "lemon",
+    "marble", "napkin", "oyster", "pencil", "queen", "rocket", "sunset",
+    "turtle", "unicorn", "violin", "window", "xylophone", "yogurt", "zebra",
+    "anchor", "butter", "cactus", "donkey", "eagle", "falcon", "grapes",
+    "honey", "igloo", "jewel", "koala", "lantern", "magnet", "noodle",
+    "ocean", "panda", "quarry", "river", "snake", "tiger", "urban",
+    "vapor", "wheat", "extreme", "yarn", "zombie", "almond", "biscuit",
+    "cotton", "dagger", "elbow", "fudge", "goblin", "helmet", "ivory",
+    "jungle", "kettle", "lizard", "melon", "nurse", "otter", "pepper",
+    "quill", "riddle", "saddle", "throne", "urchin", "venom", "walrus",
+    "pixel", "copper", "bronze", "fossil", "glacier", "harbor", "insect"
+] 
 stages = [
     """
     ________
