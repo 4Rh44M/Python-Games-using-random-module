@@ -78,6 +78,6 @@ while lives>0 and '_' in display:
         print(stages[lives])
         print("Wrong Guess\nLives left: "+str(lives))
 if '_' not in display:
-    print("You Won!!!")
+    print("\t\tYOU WON!!!")
 else:
-    print("You Lost! Word was: " + random_word)
+    print("\t\tYOU LOST!!! Word was: " + random_word)
