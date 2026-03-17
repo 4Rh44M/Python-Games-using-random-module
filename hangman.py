@@ -1,9 +1,70 @@
 import random
 word_list=["Apple","Pen","Stomach","Arrow","Computer","Python","Cartoon"]
+stages = [
+    """
+    ________
+    |      |
+    |      O
+    |     /|\\
+    |     / \\
+    |
+    """,
+    """
+    ________
+    |      |
+    |      O
+    |     /|\\
+    |     /
+    |
+    """,
+    """
+    ________
+    |      |
+    |      O
+    |     /|\\
+    |
+    |
+    """,
+    """
+    ________
+    |      |
+    |      O
+    |     /|
+    |
+    |
+    """,
+    """
+    ________
+    |      |
+    |      O
+    |      |
+    |
+    |
+    """,
+    """
+    ________
+    |      |
+    |      O
+    |
+    |
+    |
+    """,
+      """
+    ________
+    |      |
+    |
+    |
+    |
+    |
+    """
+  
+]
+
 random_word= random.choice(word_list)
 random_word=random_word.lower()
 display=list('_'*len(random_word))
-lives=5
+lives=6
+print(stages[6])
 while lives>0 and '_' in display:
     print(f"\n{"".join(display)}")
     user_guess=input("Guess an alphabet: ").lower()
@@ -14,6 +75,7 @@ while lives>0 and '_' in display:
                display[i] = user_guess
     else:
         lives-=1
+        print(stages[lives])
         print("Wrong Guess\nLives left: "+str(lives))
 if '_' not in display:
     print("You Won!!!")
